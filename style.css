@@ -252,4 +252,12 @@ html {
   background-color: #2a2a2a;
   border-left-color: #90caf9;
 }
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .navbar a {
+  color: #90caf9;
+}
 
