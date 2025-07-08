@@ -159,4 +159,23 @@ a:hover {
 html {
   scroll-behavior: smooth;
 }
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+.dark-mode .container {
+  background-color: #1e1e1e;
+}
+.dark-mode a {
+  color: #90caf9;
+}
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #007acc;
+  width: 0%;
+  z-index: 9999;
+}
 

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="progress-bar"></div>
     <nav class="navbar fade-in">
+      <button id="toggle-dark">🌓 Mode Gelap</button>
       <ul>
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#keahlian">Keahlian</a></li>
@@ -62,5 +64,19 @@
         <a href="cv-titan.pdf" download class="btn-download">Download CV</a>
       </p>
     </div>
+    <script>
+  const toggleBtn = document.getElementById("toggle-dark");
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+<script>
+  window.addEventListener("scroll", () => {
+    const scroll = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (scroll / height) * 100;
+    document.getElementById("progress-bar").style.width = `${scrolled}%`;
+  });
+</script>
   </body>
 </html>
