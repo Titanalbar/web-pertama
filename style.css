@@ -156,4 +156,7 @@ a:hover {
 .navbar a:hover {
   text-decoration: underline;
 }
+html {
+  scroll-behavior: smooth;
+}
 
