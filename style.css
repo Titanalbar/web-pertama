@@ -229,3 +229,17 @@ html {
   background-color: #90caf9;
   color: #121212;
 }
+/* Mode gelap: ubah warna teks jadi putih agar terlihat */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li,
+.dark-mode .tagline {
+  color: #ffffff;
+}
+
+/* Link di mode gelap tetap terlihat */
+.dark-mode a {
+  color: #90caf9;
+}
