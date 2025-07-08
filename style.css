@@ -229,17 +229,27 @@ html {
   background-color: #90caf9;
   color: #121212;
 }
-/* Mode gelap: ubah warna teks jadi putih agar terlihat */
+/* Mode gelap: ubah semua teks utama jadi putih */
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,
 .dark-mode p,
 .dark-mode li,
-.dark-mode .tagline {
+.dark-mode .tagline,
+.dark-mode .project-card p,
+.dark-mode a,
+.dark-mode ul {
   color: #ffffff;
 }
 
-/* Link di mode gelap tetap terlihat */
-.dark-mode a {
+/* Untuk menghindari teks link terlalu terang di latar putih saat hover */
+.dark-mode a:hover {
   color: #90caf9;
 }
+
+/* Jika ada elemen dengan background terang di dark mode, sesuaikan juga */
+.dark-mode .project-card {
+  background-color: #2a2a2a;
+  border-left-color: #90caf9;
+}
+
