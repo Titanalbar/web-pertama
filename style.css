@@ -70,3 +70,18 @@ a:hover {
   margin-top: 0;
   color: #007acc;
 }
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-download:hover {
+  background-color: #005f99;
+}
+
