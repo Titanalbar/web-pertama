@@ -53,6 +53,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .projects {
   display: grid;
   gap: 20px;
@@ -70,6 +71,7 @@ a:hover {
   margin-top: 0;
   color: #007acc;
 }
+
 .btn-download {
   display: inline-block;
   padding: 10px 20px;
@@ -84,6 +86,7 @@ a:hover {
 .btn-download:hover {
   background-color: #005f99;
 }
+
 @media screen and (max-width: 600px) {
   body {
     padding: 20px 10px;
@@ -116,6 +119,7 @@ a:hover {
     margin: 8px 0;
   }
 }
+
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -129,6 +133,7 @@ a:hover {
     transform: translateY(0);
   }
 }
+
 .navbar {
   position: sticky;
   top: 0;
@@ -156,26 +161,71 @@ a:hover {
 .navbar a:hover {
   text-decoration: underline;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .dark-mode {
   background-color: #121212;
   color: #e0e0e0;
 }
+
 .dark-mode .container {
   background-color: #1e1e1e;
 }
+
 .dark-mode a {
   color: #90caf9;
 }
-#progress-bar {
+
+.dark-mode .project-card {
+  background-color: #2a2a2a;
+  border-left-color: #90caf9;
+}
+
+#progress-container {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #e0e0e0;
+  z-index: 9998;
+}
+
+#progress-bar {
   height: 4px;
   background: #007acc;
   width: 0%;
+  transition: width 0.2s ease;
   z-index: 9999;
 }
 
+#toggle-dark {
+  background: none;
+  border: 1px solid #007acc;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #007acc;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+#toggle-dark:hover {
+  background-color: #007acc;
+  color: white;
+}
+
+.dark-mode #toggle-dark {
+  border-color: #90caf9;
+  color: #90caf9;
+}
+
+.dark-mode #toggle-dark:hover {
+  background-color: #90caf9;
+  color: #121212;
+}
