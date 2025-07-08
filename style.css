@@ -84,4 +84,36 @@ a:hover {
 .btn-download:hover {
   background-color: #005f99;
 }
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  img.foto {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 8px 0;
+  }
+}
 
