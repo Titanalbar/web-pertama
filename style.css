@@ -109,6 +109,41 @@ a:hover {
     font-size: 14px;
   }
 
+  /* Hapus pengaturan flex-direction: column */
+  /* Tetap biarkan navbar menyamping */
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar li {
+    display: inline-block;
+    margin: 4px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  img.foto {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
   .navbar ul {
     flex-direction: column;
     padding: 0;
